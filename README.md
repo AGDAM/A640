@@ -23,7 +23,7 @@ The card is built around a Xilinx **XC95288XL** CPLD that handles the 68040 → 
 Typical contents (names may vary with the version you cloned):
 
 - `main_logic.vhd` — top-level A640 logic for the XC95288XL (bus conversion, SDRAM controller, autoconfig, PLL/I2C interface)
-- `bus_sizing.vhd` — 32-bit ↔ 16-bit dynamic bus sizer
+- `dynamic_bus_sizer.vhd` — 32-bit ↔ 16-bit dynamic bus sizer
 - SDRAM controller sources
 - `*.ucf` — pin constraints for the CPLD
 - `PllConfig` sources — the AmigaOS configuration/monitoring tool
