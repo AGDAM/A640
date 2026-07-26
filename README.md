@@ -46,6 +46,6 @@ This is a **hobby project**, shared as-is for other retrocomputing enthusiasts.
 
 ## Support
 
-If you like this project, you can buy me a coffee: **https://buycoffee.to/lukzer** ☕
+If you like this project, you can buy me a coffee: **https://buycoffee.to/lukzer** ☕ or PayPal lukzer@gmail.com
 
 Thanks, and have fun tinkering!
