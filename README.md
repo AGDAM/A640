@@ -14,7 +14,7 @@ The card is built around a Xilinx **XC95288XL** CPLD that handles the 68040 → 
 - **Persistent configuration** stored in a 24LC32 I2C EEPROM (survives power cycles)
 - **On-board monitoring** over the same I2C bus: LM75A temperature sensor and DS3231 real-time clock
 - **Zorro III autoconfig** so the Fast RAM is registered cleanly by the OS
-- All bus logic implemented in a single **XC95288XL** CPLD (5V-tolerant inputs, 3.3V core)
+- Bus logic implemented in two Xilinx CPLDs — **XC95288XL** (main logic) and **XC95144XL** (bus sizing), 5V-tolerant inputs, 3.3V core
 
 ---
 
@@ -26,7 +26,8 @@ Typical contents (names may vary with the version you cloned):
 - `dynamic_bus_sizer.vhd` — 32-bit ↔ 16-bit dynamic bus sizer
 - SDRAM controller sources
 - `*.ucf` — pin constraints for the CPLD
-- `PllConfig` sources — the AmigaOS configuration/monitoring tool
+- `A640Monitor` — AmigaOS live monitor and PLL configuration tool (binary and C source)
+- `RTC` — AmigaOS tool for the DS3231 real-time clock (binary and C source)
 
 ---
 
